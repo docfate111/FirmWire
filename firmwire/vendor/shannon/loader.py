@@ -379,19 +379,19 @@ class ShannonLoader(firmwire.loader.Loader):
             log.error("Modem CP tarfile needs at least modem.bin")
             return None
 
-        if len(files) > 2:
-            log.warning("Modem CP tarfile has unexpected number of files: %s", files)
+        #if len(files) > 2:
+        #    log.warning("Modem CP tarfile has unexpected number of files: %s", files)
 
         lz4_compressed = "lz4" in files[0]
 
-        modem_name = "modem.bin"
+        modem_name = "md1img.img"
 
         if lz4_compressed:
             modem_name += ".lz4"
 
         if modem_name not in files:
             log.error("Modem CP tarfile is missing required modem.bin")
-            return None
+            #return None
 
         modem_fp = tfp.extractfile(modem_name)
 

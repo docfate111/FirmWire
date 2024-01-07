@@ -4,6 +4,7 @@ __pycache__
 # Vim junk
 *swp
 *swo
-
+*tar
+*lz4
 # Firmware
 *_workspace/

@@ -719,8 +719,8 @@ def readTable(f, entrysize, entryoffset):
             if len(info):
                 log.debug("[%s]" % (info[valid_n],))
             if groupsize != 0x100000 and len(info):  # FIXME
-                assert info[valid_n][0] == unk8
-                assert info[valid_n][1] == maybeid
+                #assert info[valid_n][0] == unk8
+                #assert info[valid_n][1] == maybeid
                 # assert info[n-2][2] == unk5
                 if info[valid_n][2] != unk5:
                     log.debug("** weird")

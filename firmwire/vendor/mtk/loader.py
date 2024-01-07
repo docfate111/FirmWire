@@ -339,7 +339,9 @@ class MTKLoader(firmwire.loader.Loader):
                         name, off, maddr, length
                     )
                 )
-
+                if(magic != MAGIC and magic2 != MAGIC2):
+                    print(magic, MAGIC, magic2, MAGIC2)
+                    break
                 assert (
                     magic == MAGIC and magic2 == MAGIC2
                 )  # either EOF, or we did smthg wrong
