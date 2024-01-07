@@ -2,6 +2,8 @@
 __pycache__
 *img
 *.img
+mnt
+mnt/*
 tmp/*
 tmp
 # Vim junk

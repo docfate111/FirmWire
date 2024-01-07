@@ -162,7 +162,7 @@ class MTKLoader(firmwire.loader.Loader):
         nv_data_path = self.loader_args["nv_data"]
         if not os.path.isdir(nv_data_path):
             log.error("NV data %s directory is missing", nv_data_path)
-            return False
+            # return False
 
         sub_path = nv_data_path / "vendor" / "nvdata"
 
@@ -172,10 +172,10 @@ class MTKLoader(firmwire.loader.Loader):
                 nv_data_path,
                 sub_path,
             )
-            return False
+            #return False
 
-        if len(os.listdir(sub_path)) == 0:
-            log.warning("NV data directory looks empty. Modem will try to recover and create defaults...")
+        #if len(os.listdir(sub_path)) == 0:
+        #    log.warning("NV data directory looks empty. Modem will try to recover and create defaults...")
 
         log.info("Using NV data from %s", nv_data_path)
 
