@@ -102,12 +102,12 @@ class MT6765(MediaTekSOC):
     AFFINITY_ONLY_CPU_0 = b"\1"
     AFFINITY_ONLY_CPU_1 = b"\x02"
     PCCIF_VERSION = 1
-    SHM_QUEUE_NUM = 8
+    SHM_QUEUE_NUM = 17
     SHM_LAYOUT = {
-        "rx_sizes": [80, 80, 40, 80, 20, 20, 64, 0],
-        "tx_sizes": [128, 40, 8, 40, 20, 20, 64, 0],
-        "rx_sizes_exp": [12, 32, 8, 0, 0, 0, 8, 0],
-        "tx_sizes_exp": [12, 32, 8, 0, 0, 0, 8, 0],
+        "rx_sizes": [80, 80, 40, 80, 20, 20, 64, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+        "tx_sizes": [128, 40, 8, 40, 20, 20, 64, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+        "rx_sizes_exp": [12, 32, 8, 0, 0, 0, 8, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+        "tx_sizes_exp": [12, 32, 8, 0, 0, 0, 8, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
     }
 
     name = "MT6765"

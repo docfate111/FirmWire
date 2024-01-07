@@ -486,6 +486,7 @@ class PCCIF_Periph(PassthroughPeripheral):
                 self.handle_SRAM_write()
             else:
                 if value >= len(self.ringbuffer.offsets):
+                    print(size, value, self.ringbuffer.offsets)
                     self.log.error(
                         f"PCCIF ring no too large (value: {value}, is only: {len(self.ringbuffer.offsets)})"
                     )
