@@ -1,6 +1,8 @@
 # Python junk
 __pycache__
-
+*img
+tmp/*
+tmp
 # Vim junk
 *swp
 *swo
